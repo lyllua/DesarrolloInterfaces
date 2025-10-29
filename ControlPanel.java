@@ -14,7 +14,6 @@ public class ControlPanel extends JFrame {
     // Theme
     private String currentTheme = "Light";
 
-    // Color cycle for Color Panel 
     private Color[] colorCycle = {
             new Color(255, 230, 230),
             new Color(255, 243, 207),
@@ -266,8 +265,9 @@ public class ControlPanel extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(Main::new);
+        SwingUtilities.invokeLater(ControlPanel::new);
     }
 }
+
 
 
