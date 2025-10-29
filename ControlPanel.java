@@ -86,11 +86,11 @@ public class ControlPanel extends JFrame {
                 fg = new Color(60, 60, 60);
                 break;
             case "Ocean":
-                bg = new Color(204, 229, 255); // pastel blue
+                bg = new Color(204, 229, 255); 
                 fg = new Color(30, 30, 60);
                 break;
             case "Warm":
-                bg = new Color(255, 224, 204); // pastel orange/peach
+                bg = new Color(255, 224, 204); 
                 fg = new Color(80, 40, 20);
                 break;
             default:
@@ -157,11 +157,11 @@ public class ControlPanel extends JFrame {
 
         titleField.addFocusListener(new FocusListener() {
             public void focusGained(FocusEvent e) {
-                titleField.setBackground(new Color(255, 255, 204)); // soft yellow
+                titleField.setBackground(new Color(255, 255, 204)); 
             }
             public void focusLost(FocusEvent e) {
                 if (titleField.getText().trim().isEmpty()) {
-                    titleField.setBackground(new Color(255, 204, 204)); // pastel pink
+                    titleField.setBackground(new Color(255, 204, 204)); 
                     statusLabel.setText("Title is required");
                     previewLabel.setText("Preview");
                 } else {
@@ -255,7 +255,7 @@ public class ControlPanel extends JFrame {
 
         JMenu helpMenu = new JMenu("Help");
         JMenuItem miAbout = new JMenuItem("About...");
-        miAbout.addActionListener(e -> JOptionPane.showMessageDialog(this, "Swing Listeners Practice\nAuthor: You"));
+        miAbout.addActionListener(e -> JOptionPane.showMessageDialog(this, "Swing Listeners Practice\nAuthor: Ly"));
 
         helpMenu.add(miAbout);
 
@@ -269,4 +269,5 @@ public class ControlPanel extends JFrame {
         SwingUtilities.invokeLater(Main::new);
     }
 }
+
 
